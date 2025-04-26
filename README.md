@@ -77,9 +77,9 @@ import socket
 s=socket.socket()
 s.connect(('localhost',8000))
 while True:
-    mac=input("Enter logical address: ")
+    mac=input("Enter MAC address: ")
     s.send(mac.encode())
-    print("MAC Address",s.recv(1024).decode())
+    print("Logical Address",s.recv(1024).decode())
 ~~~
 ## OUPUT -RARP
 
